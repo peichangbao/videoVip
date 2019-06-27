@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我想干翻这苍穹</title>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+			});
+
+			function share1() {
+				plus.share.sendWithSystem({
+					content: '',
+					href: "https://www.guanjinzhao.cn/youku/?url=" + self.parent.document.getElementById("text").value
+				}, function() {
+					console.log('分享成功');
+				}, function(e) {
+					console.log('分享失败：' + JSON.stringify(e));
+				});
+			}
+
+			function openBro1() {
+				plus.runtime.openURL(
+					"https://www.guanjinzhao.cn/youku/?url=" + self.parent.document.getElementById("text").value)
+			}
+			function share2() {
+				plus.share.sendWithSystem({
+					content: '',
+					href: "https://vip.mpos.ren/v/?url=" + self.parent.document.getElementById("text").value
+				}, function() {
+					console.log('分享成功');
+				}, function(e) {
+					console.log('分享失败：' + JSON.stringify(e));
+				});
+			}
+
+			function openBro2() {
+				plus.runtime.openURL(
+					"https://vip.mpos.ren/v/?url=" + self.parent.document.getElementById("text").value)
+			}
+			function share3() {
+				plus.share.sendWithSystem({
+					content: '',
+					href: "https://jx.000180.top/jx/?url=" + self.parent.document.getElementById("text").value
+				}, function() {
+					console.log('分享成功');
+				}, function(e) {
+					console.log('分享失败：' + JSON.stringify(e));
+				});
+			}
+
+			function openBro3() {
+				plus.runtime.openURL(
+					"https://jx.000180.top/jx/?url=" + self.parent.document.getElementById("text").value)
+			}
+			function share4() {
+				plus.share.sendWithSystem({
+					content: '',
+					href: "https://www.1717yun.com/jx/ty.php?url=" + self.parent.document.getElementById("text").value
+				}, function() {
+					console.log('分享成功');
+				}, function(e) {
+					console.log('分享失败：' + JSON.stringify(e));
+				});
+			}
+
+			function openBro4() {
+				plus.runtime.openURL(
+					"https://www.1717yun.com/jx/ty.php?url=" + self.parent.document.getElementById("text").value)
+			}
+			function share5() {
+				plus.share.sendWithSystem({
+					content: '',
+					href: "https://www.kkflv.com/index.php?url=" + self.parent.document.getElementById("text").value
+				}, function() {
+					console.log('分享成功');
+				}, function(e) {
+					console.log('分享失败：' + JSON.stringify(e));
+				});
+			}
+
+			function openBro5() {
+				plus.runtime.openURL(
+					"https://www.kkflv.com/index.php?url=" + self.parent.document.getElementById("text").value)
+			}
+		</script>
+	</head>
+
+	<body>
+		<input id="text" type="text" value="" style="width: 100%;height: 18px;"/>
+		<br />
+		<br />
+		<input type="button" onclick="javascript:share1();" value="分享链接1" style="font-size: 18px;"/>
+		<input type="button" onclick="javascript:openBro1();" value="打开播放1" style="font-size: 18px;"/>
+		<br />
+		<br />
+		<input type="button" onclick="javascript:share2();" value="分享链接2" style="font-size: 18px;"/>
+		<input type="button" onclick="javascript:openBro2();" value="打开播放2" style="font-size: 18px;"/>
+		<br />
+		<br />
+		<input type="button" onclick="javascript:share3();" value="分享链接3" style="font-size: 18px;"/>
+		<input type="button" onclick="javascript:openBro3();" value="打开播放3" style="font-size: 18px;"/>
+		<br />
+		<br />
+		<input type="button" onclick="javascript:share4();" value="分享链接4" style="font-size: 18px;"/>
+		<input type="button" onclick="javascript:openBro4();" value="打开播放4" style="font-size: 18px;"/>
+		<br />
+		<br />
+		<input type="button" onclick="javascript:share5();" value="分享链接5" style="font-size: 18px;"/>
+		<input type="button" onclick="javascript:openBro5();" value="打开播放5" style="font-size: 18px;"/>
+	</body>
+
+</html>
